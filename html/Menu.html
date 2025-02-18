@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html style="width: 100%;">
+  <head>
+    <title>TOSTI Varvarin - Meni</title>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <script type="text/javascript" src="/javascript/homepage.js"></script>
+    <script type="text/javascript" src="/javascript/menu.js"></script>
+    <link rel="icon" type="image/pgn" href="/favicon/favicon.ico">
+    <link href="/Demo-The-Seasons/Demo_Fonts/Fontspring-DEMO-theseasons-reg.otf" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+   
+    <header>  
+      <div id="brgMenu">
+        <button id="brgMenuBtn">
+          <img id="smallBurger" src="/burger menu/big_burger.png" onclick="burgerMenu(this)">
+        </button>
+      </div>
+
+      <div id="headerLeft" class="bigScreen">
+        <div class="buttonAndPopUp">
+          <button id="btnHome" class="headerButtons" onclick="window.location.href = 'homePage.html'">
+            <img class="headerImages" id="tostiLogo" src="/homePagePhoto/headerPhotos/logo213.png" alt="Logo">
+          </button>
+          <div id="popUpHome" class="descriptionPopUp">Početna strana</div>
+        </div>
+      </div>
+
+      <div id="headerMiddle" class="bigScreen">
+        <div id="pizza-button">
+          <div class="buttonAndPopUp">
+            <button class="headerButtons" onclick="window.location.href='Menu.html'">
+              <img class="headerImages" id="pizza-icon" src="/homePagePhoto/headerPhotos/logo-pizza.png" alt="Menu icon" onmouseover="changeIMG(this, '/homePagePhoto/headerPhotos/pizza-icon-melting.png')" onmouseout="changeIMG(this, '/homePagePhoto/headerPhotos/logo-pizza.png')">
+            </button>
+            <div id="popUpMenu" class="descriptionPopUp">Meni</div>
+          </div>
+        </div>
+        <!--<div id="bag-button">
+          <div class="buttonAndPopUp">
+            <button class="headerButtons"  onclick="window.location.href='Order.html'">
+              <img class="headerImages" id="bag-icon" src="/homePagePhoto/headerPhotos/closed paper-bag-icon-23.jpg" alt="Order icon" onmouseover="changeIMG(this,'/homePagePhoto/headerPhotos/open paper-bag-icon-23.jpg')" onmouseout="changeIMG(this, '/homePagePhoto/headerPhotos/closed paper-bag-icon-23.jpg')">
+              <div id="addedToCart"></div>
+            </button>
+            <div id="popUpOrder" class="descriptionPopUp">Naruči</div>
+          </div>
+        </div>-->
+      </div>
+
+      <div id="headerRight" class="bigScreen">
+        <div class="buttonAndPopUp">
+          <button class="headerButtons" onclick="window.location.href='AboutUs.html'">
+            <img class="headerImages" id="info-icon" src="/homePagePhoto/headerPhotos/about-us-white.png" alt="About us icon" onmouseover="changeIMG(this, '/homePagePhoto/headerPhotos/about-us-black.png')" onmouseout="changeIMG(this, '/homePagePhoto/headerPhotos/about-us-white.png')">
+          </button>
+          <div id="popUpAbout" class="descriptionPopUp">O nama</div>
+        </div>
+        <div class="buttonAndPopUp">
+          <button class="headerButtons" onclick="window.location.href='Contact.html'">
+            <img class="headerImages" id="contact-icon" src="/homePagePhoto/headerPhotos/call-icon.png" alt="Contact us icon" onmouseover="changeIMG(this, '/homePagePhoto/headerPhotos/active-call-icon_thumbnail.png')" onmouseout="changeIMG(this, '/homePagePhoto/headerPhotos/call-icon.png')">
+          </button>
+          <div id="popUpContact" class="descriptionPopUp">Kontaktiraj nas</div>
+        </div>
+      </div>
+      
+    </header>
+    <div id="brgMenuPopUP">
+      <ul id="dropDown" style="color: #f5bf4a;">
+        <li><a class="Link" style="color: #f5bf4a; font-size: large;" href='/html/HomePage.html'>Početna stanica</a></li>
+        <li><a class="Link" style="color: #f5bf4a; font-size: large;" href='/html/Menu.html'>Meni</a></li>
+        <li><a class="Link" style="color: #f5bf4a; font-size: large;" href='/html/AboutUs.html'>O nama</a></li>
+        <li><a class="Link" style="color: #f5bf4a; font-size: large;" href='/html/Contact.html'>Kontaktiraj nas</a></li>
+      </ul>
+    </div>
+    <div id="blur">
+      <div id="pizzaAnimationConatiner">
+        <video id="pizzaAnimation" src="/menu/pica-video.mp4" type="video/mp4" autoplay loop muted>Your browser does not support the video tag.</video>
+      </div>
+
+      <div id="buttonBar">
+        <div class="Menu" id="firstBar">
+          <button class="BtnMenu" onclick="getfocus('sandwichContainer')">Topli sendvič</button>
+          <button class="BtnMenu" onclick="getfocus('pizzaContainer')">Pica</button>
+          <button class="BtnMenu" onclick="getfocus('barbecueContainer')">Roštilj</button>
+          <button class="BtnMenu" onclick="getfocus('gyrosContainer')">Pileci Giros</button>
+          <button class="BtnMenu" onclick="getfocus('frenchFriesContainer')">Pomfrit</button>
+        </div>
+        <div class="Menu" id="secondBar">
+          <button class="BtnMenu" onclick="getfocus('softDrinkContainer')">Bezalkoholna pića</button>
+          <button class="BtnMenu" onclick="getfocus('liquorContainer')">Alkoholna pića</button>
+        </div>
+      </div>
+      <div id="lineCotainer">
+        <div id="line"></div>
+      </div>
+
+      <div id="menuCotainer">
+        <div id="sandwichContainer" class="productContainer">
+          <h1 class="title">Topli sendvič - TOST</h1>
+
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">1</div>
+              <div class="nameANDdetails">
+                <div class="productName">TOST salama-sir</div>
+                <div class="productDetails">tost lepinja, salama, sir, jogurt, začini</div>
+              </div>
+            </div>
+
+            <div class="priceANDorder">
+              <div class="price">220,00 rsd</div>
+              <button class="butnOrder" onclick="addArticle()">Dodaj u kesu</button>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">2</div>
+              <div class="nameANDdetails">
+                <div class="productName">Maxi TOST salama-sir</div>
+                <div class="productDetails">tost lepinja, salama, sir, jogurt, začini</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">300,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">3</div>
+              <div class="nameANDdetails">
+                <div class="productName">TOST šunka-sir</div>
+                <div class="productDetails"></div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">250,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">4</div>
+              <div class="nameANDdetails">
+                <div class="productName">Maxi TOST šunka-sir</div>
+                <div class="productDetails">tost lepinja, šunka, sir, jogurt, začini</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">320,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">5</div>
+              <div class="nameANDdetails">
+                <div class="productName">TOST vegetarijana</div>
+                <div class="productDetails">tost lepinja, kačkavalj</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">250,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">6</div>
+              <div class="nameANDdetails">
+                <div class="productName">TOST šunka-kačkavalj</div>
+                <div class="productDetails">tost lepinja, šunka, kačkavalj</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">280,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">7</div>
+              <div class="nameANDdetails">
+                <div class="productName">Maxi TOST šunka-kačkavalj</div>
+                <div class="productDetails">tost lepinja, šunka, kačkavalj</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">330,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">8</div>
+              <div class="nameANDdetails">
+                <div class="productName">TOST suvi vrat</div>
+                <div class="productDetails">tost lepinja, suvi vrat</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">320,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">9</div>
+              <div class="nameANDdetails">
+                <div class="productName">TOST suvi vrat-kačkavalj</div>
+                <div class="productDetails">tost lepinja, suvi vrat, kačkavalj</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">330,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">10</div>
+              <div class="nameANDdetails">
+                <div class="productName">Maxi TOST suvi vrat-kačkavalj</div>
+                <div class="productDetails">tost lepinja, suvi vrat, kačkavalj</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">400,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">11</div>
+              <div class="nameANDdetails">
+                <div class="productName">TOST kulen-kačkavalj</div>
+                <div class="productDetails">tost lepinja, kulen, kačkavalj</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">330,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">12</div>
+              <div class="nameANDdetails">
+                <div class="productName">Maxi TOST kulen-kačkavalj</div>
+                <div class="productDetails">tost lepinja, kulen, kačkavalj</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">400,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">13</div>
+              <div class="nameANDdetails">
+                <div class="productName">TOST krem</div>
+                <div class="productDetails">tost lepinja, krem</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">250,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+
+        </div>
+        
+        <div id="pizzaContainer" class="productContainer">
+          <h1 class="title">Pica</h1>
+
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">1</div>
+              <div class="nameANDdetails">
+                <div class="productName">Pica - velika</div>
+                <div class="productDetails">paradajz pire, pečurke, šunka, kačkavalj, začini</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">1500,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">2</div>
+              <div class="nameANDdetails">
+                <div class="productName">Pica - parče</div>
+                <div class="productDetails">paradajz pire, pečurke, šunka, kačkavalj, začini</div>
+              </div>
+            </div>
+            
+            <div class="priceANDorder">
+              <div class="price">280,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">3</div>
+              <div class="nameANDdetails">
+                <div class="productName">Mini Pica - kulen</div>
+                <div class="productDetails">paradajz pire, pečurke, kulen, kačkavalj, začini</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">320,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">4</div>
+              <div class="nameANDdetails">
+                <div class="productName">Mini Pica - suvi vrat</div>
+                <div class="productDetails">paradajz pire, suvi vrat, kulen, kačkavalj, začini</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">320,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+        </div>
+      
+        <div id="barbecueContainer" class="productContainer">
+          <h1 class="title">Roštilj</h1>
+
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">1</div>
+              <div class="nameANDdetails">
+                <div class="productName">Pljeskavica 100gr</div>
+                <div class="productDetails">mleveno svinjsko meso, luk</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">250,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">2</div>
+              <div class="nameANDdetails">
+                <div class="productName">Pljeskavica 100gr + jaje</div>
+                <div class="productDetails">mleveno svinjsko meso, luk, jaje</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">300,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">3</div>
+              <div class="nameANDdetails">
+                <div class="productName">Pljeskavica 120gr</div>
+                <div class="productDetails">mleveno svinjsko meso, luk</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">300,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">4</div>
+              <div class="nameANDdetails">
+                <div class="productName">Pljeskavica MEDZIK</div>
+                <div class="productDetails">mleveno svinjsko meso, luk, kačkavalj, suvi vrat</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">380,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div> 
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">5</div>
+              <div class="nameANDdetails">
+                <div class="productName">Gurmanska Pljeskavica</div>
+                <div class="productDetails">mleveno svinjsko meso, luk, ljuta paprika</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">380,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div> 
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">6</div>
+              <div class="nameANDdetails">
+                <div class="productName">Kafanska Pljeskavica</div>
+                <div class="productDetails">mleveno svinjsko meso, luk, ljuto</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">350,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div> 
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">7</div>
+              <div class="nameANDdetails">
+                <div class="productName">Pljeskavica 200gr</div>
+                <div class="productDetails">mleveno svinjsko meso, luk</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">380,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div> 
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">8</div>
+              <div class="nameANDdetails">
+                <div class="productName">Pljeskavica 200gr + jaje</div>
+                <div class="productDetails">mleveno svinjsko meso, luk, jaje</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">400,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div> 
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">9</div>
+              <div class="nameANDdetails">
+                <div class="productName">Dve pljeskavice u lepinji 240gr</div>
+                <div class="productDetails">mleveno svinjsko meso, luk</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">400,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">10</div>
+              <div class="nameANDdetails">
+                <div class="productName">Punjeni ćevap 200gr</div>
+                <div class="productDetails">mleveno svinjsko meso, luk, </div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">400,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">11</div>
+              <div class="nameANDdetails">
+                <div class="productName">Pet ćevapa u lepinji</div>
+                <div class="productDetails">mleveno svinjsko meso, luk</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">320,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">12</div>
+              <div class="nameANDdetails">
+                <div class="productName">Ćevapi 1kg</div>
+                <div class="productDetails">mleveno svinjsko meso, luk</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">1800,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">13</div>
+              <div class="nameANDdetails">
+                <div class="productName">Kobasica 180gr</div>
+                <div class="productDetails">svinjsko meso</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">400,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">14</div>
+              <div class="nameANDdetails">
+                <div class="productName">Pileće belo meso 150gr</div>
+                <div class="productDetails">pileće meso</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">300,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">15</div>
+              <div class="nameANDdetails">
+                <div class="productName">Pileći batak 150gr</div>
+                <div class="productDetails">pileće meso</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">350,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          
+        </div>
+        
+
+        <div id="gyrosContainer" class="productContainer">
+          <h1 class="title">Pileći Giros</h1>
+
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">1</div>
+              <div class="nameANDdetails">
+                <div class="productName">Giros</div>
+                <div class="productDetails">tortilja, pileće meso, pomfrit</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">370,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">2</div>
+              <div class="nameANDdetails">
+                <div class="productName">Giros veći</div>
+                <div class="productDetails">tortilja, pileće meso, pomfrit</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">470,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">3</div>
+              <div class="nameANDdetails">
+                <div class="productName">Giros manji</div>
+                <div class="productDetails">tortilja, pileće meso, pomfrit</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">270,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+
+        </div>
+        
+        <div id="frenchFriesContainer" class="productContainer">
+          <h1 class="title">Pomfrit</h1>
+
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">1</div>
+              <div class="nameANDdetails">
+                <div class="productName">Pomfrit 100gr</div>
+                <div class="productDetails">krompir</div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">100,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div id="softDrinkContainer" class="productContainer">
+          <h1 class="title">Bezalkohola pića</h1>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">1</div>
+              <div class="nameANDdetails">
+                <div class="productName">Sokovi 0,5l</div>
+                <div class="productDetails"></div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">120,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">2</div>
+              <div class="nameANDdetails">
+                <div class="productName">Sokovi u limenci</div>
+                <div class="productDetails"></div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">120,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">3</div>
+              <div class="nameANDdetails">
+                <div class="productName">Sokovi negazirani 0,5l</div>
+                <div class="productDetails"></div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">120,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">4</div>
+              <div class="nameANDdetails">
+                <div class="productName">Voda negazirana 0,5l</div>
+                <div class="productDetails"></div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">80,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">5</div>
+              <div class="nameANDdetails">
+                <div class="productName">Voda gazirana 0,5l</div>
+                <div class="productDetails"></div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">80,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">6</div>
+              <div class="nameANDdetails">
+                <div class="productName">Energetski napitak</div>
+                <div class="productDetails"></div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">120,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+
+        </div>
+        
+        <div id="liquorContainer" class="productContainer"  style="margin-bottom: 10px;">
+          <h1 class="title">Alkoholna pića</h1>
+
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">1</div>
+              <div class="nameANDdetails">
+                <div class="productName">Pivo 0,33l</div>
+                <div class="productDetails"></div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">140,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">2</div>
+              <div class="nameANDdetails">
+                <div class="productName">Pivo domaće 0,33l</div>
+                <div class="productDetails"></div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">120,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="productSpec">
+              <div class="number">3</div>
+              <div class="nameANDdetails">
+                <div class="productName">Pivo strano 0,33l</div>
+                <div class="productDetails"></div>
+              </div>
+            </div>
+            <div class="priceANDorder">
+              <div class="price">160,00 rsd</div>
+              <button class="butnOrder">Dodaj u kesu</button>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+      <footer>
+        <div id="footer-upper">
+          <div id="btnList">
+            <ul title="Poseti naš sajt">
+              <li><a class="Link" style="color: white;" href=''>Početna stanica</a></li>
+              <li><a class="Link" style="color: white;" href=''>Meni</a></li>
+              <li><a class="Link" style="color: white;" href=''>O nama</a></li>
+              <li><a class="Link" style="color: white;" href=''>Kontaktiraj nas</a></li>
+            </ul>
+          </div>
+          <div id="map">
+            <div id="visitUs">Poseti nas</div>
+            <iframe id="TostiMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.59679118928236!2d21.36792076122899!3d43.72466973648315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47569106af69b89f%3A0xabadd0df2b81424b!2sUR%20%22TOSTI%20fast%20food%22!5e0!3m2!1ssr!2srs!4v1712219929215!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div id="footer-lower">
+          <p id="footer-rights">© TOSTI 2025 All rights reserved.|Crafted by <a id="linkedin" href="https://www.linkedin.com/in/sne%C5%BEana-raki%C4%87/">Snežana Rakić</a></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
