@@ -1,0 +1,166 @@
+* {
+
+  font-family: 'The Seasons';
+}
+
+
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 20vh;
+  z-index: 2;
+  justify-content: space-between;
+  background-color: #c61900;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#brgMenuBtn {
+  height: fit-content;
+  width: 0px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+#smallBurger {
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+#headerLeft {
+  display: flex;
+  grid-template-columns: 0.25fr ; 
+   
+}
+
+#headerMiddle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#headerRight {
+  display: flex;
+  flex-direction: row;
+}
+
+#tostiLogo {
+  border-radius: 30px;
+}
+
+.headerButtons {
+  width: 90px;
+  cursor: pointer;
+  background: #FFB000;
+  border: none;
+  border-radius: 50%;
+}
+
+.headerButtons:hover {
+  background: #f5bf4a;
+}
+
+.headerImages {
+  width: 60px;
+  vertical-align: top;
+}
+
+#zalogajDana {
+  z-index: 1;
+}
+
+#pizza-button {
+  display: flex;
+  flex-direction: row;
+}
+
+#bag-button {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+
+#bag-icon {
+  z-index: 0;
+}
+
+#addedToCart {
+  border-radius: 50%;
+  background-color: white;
+  right: 10%;
+  padding: 3px;
+  font-size: large;
+  visibility: hidden;
+}
+
+.descriptionPopUp {
+  width: 120px;
+  visibility: hidden;
+  margin-top: 5px;
+  background-color: rgba(113, 26, 26, 0.5);
+  color: #000000;
+  text-align: center;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 17px;
+}
+
+.buttonAndPopUp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #c61900;
+  margin-left: 20px;
+  padding-top: 5px;
+
+}
+
+.buttonAndPopUp:hover>#popUpHome {
+  visibility: visible;
+  height: auto;
+  transition-delay: 0.1s, 2s;
+}
+
+.buttonAndPopUp:hover>#popUpMenu {
+  visibility: visible;
+  height: auto;
+  transition-delay: 0.1s, 2s;
+}
+
+.buttonAndPopUp:hover>#popUpOrder {
+  visibility: visible;
+  height: auto;
+  transition-delay: 0.1s, 2s;
+}
+
+.buttonAndPopUp:hover>#popUpCart {
+  visibility: visible;
+  height: auto;
+  transition-delay: 0.1s, 2s;
+}
+
+.buttonAndPopUp:hover>#popUpAbout {
+  visibility: visible;
+  height: auto;
+  transition-delay: 0.1s, 2s;
+}
+
+.buttonAndPopUp:hover>#popUpContact {
+  visibility: visible;
+  height: auto;
+  transition-delay: 0.1s, 2s;
+}
+

@@ -1,0 +1,234 @@
+@font-face {
+  font-family: "The Seasons";
+  src: url('Demo-The-Seasons/Demo_Fonts/Fontspring-DEMO-theseasons-reg.otf');
+  src: url('Demo-The-Seasons/Demo_Fonts/Fontspring-DEMO-theseasons-reg.otf') format('opentype');
+}
+
+* {
+  font-family: 'The Seasons';
+}
+
+body{
+  width: 100%;
+}
+
+#site {
+  width: 100%;
+}
+
+.bigScreen {
+  visibility: hidden;
+}
+
+#brgMenuPopUP {
+  visibility: hidden;
+  margin-top: 0;
+  padding-top: 0;
+  background-color: #c61900;
+  z-index: 1;
+  position: absolute;
+}
+
+#dropDown {
+  padding-top: 10%;
+  padding-left: 25%;
+}
+
+#blur {
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+}
+
+#main {
+  position: relative;
+  text-align: center;
+  justify-items: center;
+  padding: 1.5%;
+}
+
+#TOSTI {
+  width: 90vw;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#menuAndOrder {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  justify-items: center;
+  padding: 1.5%;
+  
+}
+
+#menuSect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#menuSectimg {
+  flex-wrap: wrap;
+  width: 70vw;
+  height: 50vw;
+}
+
+.btnMenuOrder {
+  background-color: #FFB000;
+  color: rgb(235, 235, 235);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 23px;
+  z-index: 1;
+  position: absolute;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#menuSectBtn{
+  position: absolute;
+  transform: translate(-100%, 150%);
+}
+
+#menuSectBtn:hover,
+#aboutUsSectBtn:hover {
+  background-color: #f5bf4a;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 12px 16px 0 rgba(73, 72, 72, 0.24), 0 17px 50px 0 rgba(255, 255, 255, 0.19);
+}
+
+#orderSect {
+  align-items: center;
+  justify-content: center;
+}
+
+#orderSectvid {
+  width: 90vw;
+  margin: 0;
+  z-index: -2;
+}
+
+#aboutUsSect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+#storePhoto {
+  width: calc(100vw - 4.5%);
+}
+
+#aboutUsSectBtn {
+  position: absolute;
+  transform: translate(-110%, 80%);
+}
+
+@media only screen and (min-width: 450px) {
+  #menuSectBtn{
+    transform: translate(-160%, 220%);
+  }
+
+  #aboutUsSectBtn {
+    transform: translate(-170%, 140%);
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .btnMenuOrder {
+    font-size: 29px;
+  }
+
+  #TostiMap {
+    height: 10vw;
+    width: 20vw;
+  }
+
+  header {
+    display: flex;
+    grid-template-columns: repeat(4, calc(100% / 4));
+  }
+
+  #brgMenu {
+    visibility: hidden;
+    display: none;
+  }
+
+  .bigScreen {
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .btnMenuOrder {
+    font-size: 29px;
+  }
+  #menuSectBtn{
+    transform: translate(-200%, 260%);
+  }
+
+  #aboutUsSectBtn {
+    transform: translate(-220%, 160%);
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  #menuSectBtn{
+    transform: translate(-300%, 360%);
+  }
+
+  #aboutUsSectBtn {
+    transform: translate(-300%, 220%);
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #menuSectBtn{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transform: translate(-270%, 400%);
+  }
+
+  #aboutUsSectBtn {
+    transform: translate(-360%, 280%);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #menuSectBtn{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transform: translate(-350%, 450%);
+  }
+
+  #aboutUsSectBtn {
+    transform: translate(-450%, 350%);
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .btnMenuOrder {
+    font-size: 37px;
+    padding: 20px;
+  }
+
+  #menuSectBtn{
+    padding-left: 30px;
+    padding-right: 30px;
+    transform: translate(-290%, 430%);
+  }
+
+  #aboutUsSectBtn {
+    transform: translate(-350%, 200%);
+  }
+}

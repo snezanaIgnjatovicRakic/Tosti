@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "The Seasons";
+  src: url('Demo-The-Seasons/Demo_Fonts/Fontspring-DEMO-theseasons-reg.otf');
+  src: url('Demo-The-Seasons/Demo_Fonts/Fontspring-DEMO-theseasons-reg.otf') format('opentype');
+}
+
+* {
+  font-family: 'The Seasons';
+}
+
+.bigScreen {
+  visibility: hidden;
+}
+
+#brgMenuPopUP {
+  visibility: hidden;
+  width: 70vw;
+  height: 35vh;
+  margin-top: 0;
+  padding-top: 0;
+  background-color: #c61900;
+  z-index: 1;
+  position: absolute;
+}
+
+#dropDown {
+  padding-top: 10%;
+  padding-left: 25%;
+}
+
+#blur {
+  width: 100%;
+  z-index: -50;
+  position: absolute;
+}
+
+#pizzaAnimationConatiner {
+  width: 98.9VW;  
+  justify-content: center;
+  align-items: center;
+  background-color: #000000db;
+}
+
+#pizzaAnimation {
+  width: 98.9vw;
+}
+
+#buttonBar {
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.Menu {
+  width: 100%;
+  background-color: #000000db;
+  margin-top: 10px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px #494949db;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#firstBar {
+  padding-bottom: 0;
+  margin-bottom: 5px;
+}
+
+#secondBar {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.BtnMenu {
+  height: 35px;
+  border-radius: 25px;
+  font-size: 20px;
+  background-color: #cc3a24;
+  border-color: #a47676db;
+  color: white;
+  text-shadow: rgb(146, 143, 143) 1px 0 10px;
+}
+
+.BtnMenu:hover {
+  box-shadow: 0 5px 5px 0 #985454db, 0 5px 12px 0 #9c7c7cdb;
+
+}
+
+#lineCotainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#line {
+  background-color: #000000db;
+  height: 1px;
+  margin: 10px;
+}
+
+#menuCotainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.productContainer {
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #dc604d;
+  margin-top: 10px;
+}
+
+.title {
+  text-shadow: 3px 1px rgb(146, 143, 143);
+}
+
+.product {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 5px #852c2cdb;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.productSpec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.number {
+  padding-left: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 2px;
+  margin-right: 10px;
+  padding-right: 20px;
+  border-radius: 50%;
+  height: fit-content;
+  width: 2px;
+}
+
+.productName {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.productDetails {
+  font-size: 16px;
+  color: rgb(25, 25, 25);
+}
+
+.priceANDorder {
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bolder;
+  color: #dc604d;
+}
+
+.butnOrder {
+  visibility: hidden;
+  height: 0px;
+  width: 150px;
+  font-size: 17px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: #cc3a24;
+}
+
+.butnOrder:hover {
+  box-shadow: 5px 5px 5px #482222db;
+}
+
+.butnOrder:active {
+  box-shadow: -4px -4px 5px #482222db;
+}
+
+@media only screen and (min-width: 450px) {
+  #secondBar{
+    width: 80vw;
+  }
+
+}
+
+@media only screen and (min-width: 550px) {
+  #TostiMap {
+    height: 10vw;
+    width: 20vw;
+  }
+
+  header {
+    display: flex;
+    grid-template-columns: repeat(4, calc(100% / 4));
+  }
+
+  #brgMenu {
+    visibility: hidden;
+    display: none;
+  }
+
+  .bigScreen {
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  #firstBar{
+    width: 600px;
+  }
+
+  #secondBar{
+    width: 400px;
+  }
+
+  .product{
+    width: 70vw;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .product{
+    width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #firstBar{
+    width: 650px;
+  }
+
+  #secondBar{
+    width: 430px;
+  }
+}

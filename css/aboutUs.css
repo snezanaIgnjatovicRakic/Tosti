@@ -1,0 +1,137 @@
+body{
+  width: 100%;
+}
+
+.bigScreen {
+  visibility: hidden;
+}
+
+#brgMenuPopUP {
+  visibility: hidden;
+  margin-top: 0;
+  padding-top: 0;
+  background-color: #c61900;
+  z-index: 1;
+  position: absolute;
+}
+
+#dropDown {
+  padding-top: 10%;
+  padding-left: 25%;
+}
+
+#blur {
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+}
+
+#textCointeiner{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#descriptionTOSTI{
+  font-weight: lighter;
+}
+#upperImagesCotainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#bottomImagesCotainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.imagesAboutUsUp{   
+  width: 100vw; 
+}
+.imagesAboutUs{ 
+  width: 100vw; 
+}
+
+@media only screen and (min-width: 550px) {
+  #TostiMap {
+    height: 10vw;
+    width: 20vw;
+  }
+
+  header {
+    display: flex;
+    grid-template-columns: repeat(4, calc(100% / 4));
+  }
+
+  #brgMenu {
+    visibility: hidden;
+    display: none;
+  }
+
+  .bigScreen {
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #storemiddle{
+    width: 700px;
+  }
+  .imagesAboutUs{
+    height: 400px;
+  }
+  #gyros{
+    padding-left: 5px;
+  }
+  #gyros, #chicken{
+    width: 300px;
+  }
+  #sausage{
+    width: 600px;
+  }
+  #pizzaImg{
+    width: 650px;
+  }
+}
+
+@media only screen and (min-width: 900px){
+  #upperImagesCotainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#bottomImagesCotainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.imagesAboutUsUp{
+  height: 400px;
+  width: 500px;
+}
+#storemiddle{
+  width: 700px;
+}
+.imagesAboutUs{
+  height: 400px;
+}
+#gyros{
+  padding-left: 5px;
+}
+#gyros, #chicken{
+  width: 300px;
+}
+#sausage{
+  width: 600px;
+}
+#pizzaImg{
+  width: 650px;
+}
+}

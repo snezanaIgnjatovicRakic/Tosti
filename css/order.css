@@ -1,0 +1,53 @@
+#headerLeft{
+  display: flex;
+  flex-direction: row;
+}
+#headerMiddle{
+  display: flex;
+  flex-direction: row;
+}
+#headerRight{
+  display: flex;
+  flex-direction: row;
+}
+#tostiLogo{
+  border-radius: 30px;
+  width: 60px;
+}
+.headerButtons{
+  width: 120px;  
+  cursor: pointer;
+  background: #fecf30;
+  border: none;
+  border-radius: 100%;
+}
+.headerImages{
+  width: 60px;
+  vertical-align: top;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+  vertical-align: top;
+  justify-content: space-between;
+  background-color: #c61900;
+  padding: 10px;
+}
+
+#zalogajDana{
+  z-index: 1;
+}
+#homePageImg{
+  width: 50%;
+  height: 50%;
+  z-index: 0;
+}
+#pizza-button{
+  display: flex;
+  flex-direction: row;
+}
+#bag-button{
+  display: flex;
+  flex-direction: row;
+}
